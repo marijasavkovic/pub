@@ -1,0 +1,41 @@
+{% extends "templates/base.html" %}
+{% block content %}
+<div class="about">
+   <div class="about-info">
+      <h3>{{type.name}}</h3>
+   </div>
+   <div class="about-grids">
+      <div class="col-lg-5">
+        <form name="type">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" value="{{type.name}}"/>
+          </div>
+        </form>
+        <input class="pull-right" type="button" value="Edit" onclick="editType({{type.id}})"/>
+      </div>
+      <div class="col-lg-7">
+        <h4 class="white">Drinks:</h4>
+      <table class="table">
+       <thead>
+       <th>Name</th>
+       <th>Action</th>
+       </thead>
+       <tbody>
+         {% for d in drinks %}
+         <tr id="{{d.id}}">
+            <td>{{d.name}}</td>
+           <td>
+             <a class="linkView" href="/drink/{{d.id}}">View</a>
+           <button class="btn btnHref" onclick="deleteDrinkFromType({{d.id}})">Delete</button>
+           </td>
+         </tr>
+      {% endfor %}
+       </tbody>
+     </table>
+     </div>
+   </div>
+</div>
+
+{% endblock %}
+

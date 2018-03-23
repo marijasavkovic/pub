@@ -1,0 +1,22 @@
+{% extends "templates/base.html" %}
+{% block content %}
+<div class="row">
+   <div class="col-lg-8 col-lg-offset-2">
+      <input type="text" name="search" value="" placeholder="Search types..." onkeyup="searchTypes(this.value);" autofocus/>
+      <table id="table-type"  class="table">
+         <thead>
+            <th>ID</th>
+            <th>Name</th>
+         </thead>
+         <tbody>
+            {% for type in types %}
+            <tr id="{{type.id}}" onclick="getType(this.id)" class="clickable-row">
+               <td>{{type.id}}</td>
+               <td>{{type.name}}</td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </div>
+</div>
+{% endblock %}

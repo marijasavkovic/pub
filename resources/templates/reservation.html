@@ -1,0 +1,39 @@
+{% extends "templates/base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <h3>
+            {{title}}
+            <hr/>
+        </h3>
+        <form action="" name="pub" method="post" enctype="multipart/form-data">
+            <div class="form-group form-group-lg">
+                <label class="control-label col-lg-2" for="name">Person Name:</label>
+                <div class="col-lg-10">
+                    <input type="text" name="person" id="name" placeholder="Name and Surname"
+                           value="{{reservation.person}}" required/>
+                </div>
+            </div>
+            <div class="form-group form-group-lg">
+                <label class="control-label col-lg-2" for="asd">Number of Persons:</label>
+                <div class="col-lg-10">
+                    <input type="text" name="person_number" id="asd" placeholder="Number of Persons"
+                           value="{{reservation.person_number}}" required/>
+                </div>
+            </div>
+            <div class="form-group form-group-lg">
+                <label class="control-label col-lg-2" for="reservation_date">Reservation Date:</label>
+                <div class="col-lg-10">
+                    <input type="date" name="reservation_date" id="reservation_date" placeholder="Date" min="minDate"
+                           value="{{reservation.reservation_date}}" required/>
+                </div>
+            </div>
+            <div class="form-group form-group-lg pull-right">
+                {% ifequal view false %}
+                <input type="submit" value="Save"/>
+                {% endifequal %}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

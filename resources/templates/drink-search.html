@@ -1,0 +1,24 @@
+{% extends "templates/base.html" %}
+{% block content %}
+      <div class="row">
+         <div class="col-lg-12">
+           <input type="text" name="search" placeholder="Search drinks..." onkeyup="searchDrinks(this.value);" autofocus/>
+           <table id="table-drinks" class="table">
+            <thead>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Drink type</th>
+             </thead>
+             <tbody>
+               {% for d in drinks %}
+               <tr id="{{d.id}}" onclick="getDrink(this.id)" class="clickable-row">
+               <td>{{d.id}}</td>
+               <td>{{d.name}}</td>
+               <td>{{d.tname}}</td>
+               </tr>
+               {% endfor %}
+             </tbody>
+           </table>
+         </div>
+      </div>
+{% endblock %}

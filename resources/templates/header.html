@@ -1,0 +1,46 @@
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="/images/logo.jpg" alt=""></a>
+        </div>
+        <div class="navigation">
+            <span class="menu"><img src="/images/menu.png" alt=""/></span>
+            <ul class="nav1">
+                <li><a href="/">HOME</a></li>
+                {% if logged %}
+                <li><span></span></li>
+                <li><a href="/types">SEARCH TYPES</a></li>
+                <li><span></span></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">DRINK <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/drink">ADD DRINK</a></li>
+                        <li><a href="/drinks">SEARCH DRINK</a></li>
+                    </ul>
+                </li>
+                <li><span></span></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ACCOUNT <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/user/{{logged.id}}">VIEW PROFILE</a></li>
+                        <li><a href="/logout">LOGOUT</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li><span></span></li>
+                <li><a href="/reservation">RESERVATION</a></li>
+                <li><span></span></li>
+                <li><a href="/login">LOGIN</a></li>
+
+                {% endif %}
+            </ul>
+            <script>
+                $("span.menu").click(function() {
+                    $("ul.nav1").slideToggle(300, function() {});
+                });
+            </script>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+

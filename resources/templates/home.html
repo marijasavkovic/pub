@@ -1,0 +1,18 @@
+{% extends "templates/base.html" %}
+{% block content %}
+<h3>Welcome </h3>
+{% for b in drinks %}
+<div class="square">
+   <div class="content-pic">
+        <div class="table">
+            <div class="table-cell">
+                <a href="/drink/{{b.id}}"></a>
+                {{b.name}}
+            </div>
+            <div class="price">
+                Price: {{b.price}} rsd</div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
