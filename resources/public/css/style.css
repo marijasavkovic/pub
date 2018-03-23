@@ -33,7 +33,6 @@ background-color: transparent!important;
   border-radius: 20px;
 }
 label.btn {
-    padding: 10 0;
     white-space: normal;
     -webkit-transform: scale(1.0);
     -moz-transform: scale(1.0);
@@ -190,13 +189,11 @@ label.glyphicon {
     -moz-animation-name: fadeG;
     -moz-animation-duration: .8800000000000001s;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: linear;
     -webkit-border-radius: 8px 8px 0 0;
     -webkit-transform: scale(0.4);
     -webkit-animation-name: fadeG;
     -webkit-animation-duration: .8800000000000001s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: linear;
     -ms-border-radius: 8px 8px 0 0;
     -ms-transform: scale(0.4);
     -ms-animation-name: fadeG;
@@ -208,13 +205,11 @@ label.glyphicon {
     -o-animation-name: fadeG;
     -o-animation-duration: .8800000000000001s;
     -o-animation-iteration-count: infinite;
-    -o-animation-direction: linear;
     border-radius: 8px 8px 0 0;
     transform: scale(0.4);
     animation-name: fadeG;
     animation-duration: .8800000000000001s;
     animation-iteration-count: infinite;
-    animation-direction: linear
 }
 #rotateG_01 {
     left: 0;
@@ -388,7 +383,6 @@ label.glyphicon {
     width: 20%;
     padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
-    background-color:none;
     overflow:hidden;
 }
 .content-pic {
@@ -605,7 +599,6 @@ span.menu {
     list-style: none;
 }
 .banner-bottom {
-    background: url("../images/second-back.png") repeat;
     padding: 40px 0;
 }
 .bottom-grid p {
@@ -628,7 +621,6 @@ span.menu {
     color: #ffffff;
 }
 .content-bottom {
-    background: url("../images/third-back.png") repeat;
     padding: 70px 0;
 }
 .content-grid p {
@@ -734,7 +726,6 @@ span.menu {
 
 .footer-top {
 /*     padding: 70px 0; */
-    background: url("../images/foot-back.png") repeat;
 }
 .top-grid h3 {
     margin: 0 0 10px 0;
@@ -763,7 +754,6 @@ span.menu {
     border-bottom: none;
 }
 .contact {
-    background: url("../images/third-back.png") repeat;
     padding: 70px 0;
 }
 .contact-info {
@@ -828,12 +818,10 @@ h3 {
 /*-- news-page --*/
 
 .events-sec {
-    background: url("../images/third-back.png") repeat;
     padding: 70px 0;
 }
 .featured-news {
     padding: 70px 0;
-    background: url("../images/foot-back.png") repeat;
 }
 .events-sec h2 {
     font-weight: 200;
@@ -971,7 +959,6 @@ h3 {
 /*----blog----*/
 
 .blog {
-    background: url("../images/third-back.png") repeat;
     padding: 70px 0;
 }
 .blog-head h3 {
@@ -1274,7 +1261,6 @@ ul.pagination li a {
     font-size: 14px;
 }
 .comment-icons ul li span {
-    background: url(../images/iconsprite.png) no-repeat 0px 0px;
     margin-right: 10px;
     display: inline-block;
     width: 12px;
@@ -1282,21 +1268,17 @@ ul.pagination li a {
     vertical-align: middle;
 }
 .comment-icons ul li span.clndr {
-    background: url(../images/iconsprite.png) no-repeat -19px -2px;
     width: 17px;
 }
 .comment-icons ul li span.admin {
-    background: url(../images/iconsprite.png) no-repeat 0px -25px;
     width: 15px;
     height: 20px;
 }
 .comment-icons ul li span.cmnts {
-    background: url(../images/iconsprite.png) no-repeat -18px -24px;
     margin-right: 5px;
     width: 17px;
 }
 .comment-icons ul li a.like {
-    background: url(../images/iconsprite.png) no-repeat 2px -46px;
     margin-right: 6px;
     padding-left: 1.5em;
 }
@@ -1372,7 +1354,6 @@ ul.pagination li a {
 .response-text h5 {
     font-weight: 600;
     font-size: 14px;
-    margin: 10 0 0px 0;
     color: #887f66;
 }
 .response-text-left h5 a {
@@ -1454,7 +1435,6 @@ textarea {
 /*--products-page--*/
 
 .products {
-    background: url("../images/third-back.png") repeat;
     padding: 70px 0;
 }
 .products-info h3 {
@@ -1511,7 +1491,6 @@ textarea {
 /*--about-page--*/
 
 .about {
-    background: url("../images/third-back.png") repeat;
     padding: 70px 0;
 }
 .about-info h3 {
@@ -1550,7 +1529,6 @@ textarea {
 }
 .help-grids {
     padding: 70px 0;
-    background: url("../images/second-back.png") repeat;
 }
 .help-grid h3 {
     margin: 0px 0 18px 0;
@@ -1568,7 +1546,6 @@ textarea {
     line-height: 1.8em;
 }
 .business-team {
-    background: url("../images/foot-back.png") repeat;
     padding: 70px 0;
 }
 .team-info h3 {
@@ -1941,7 +1918,6 @@ span.badge {
     min-width: 3rem;
     padding: 2px 9px;
     text-align: center;
-    font-size: 0.85;
     line-height: inherit;
     color: #fff;
     position: absolute;
@@ -2736,7 +2712,7 @@ blockquote {
     }
 }
 @media(max-width:640px) {
-    .navigation ul li: nth-child(2), .navigation ul li: nth-child(4), .navigation ul li: nth-child(6), .navigation ul li: nth-child(8), .navigation ul li: nth-child(10), .navigation ul li: nth-child(12) {
+    .navigation ul li:nth-child(2), .navigation ul li:nth-child(4), .navigation ul li:nth-child(6), .navigation ul li:nth-child(8), .navigation ul li:nth-child(10), .navigation ul li:nth-child(12) {
         display: none;
     }
     span.menu img {
@@ -2752,7 +2728,6 @@ blockquote {
     }
     ul.nav1 {
         display: none;
-        background: url("../images/third-back.png") repeat;
     }
     .navigation ul.nav1 li {
         display: inline-block;
@@ -3095,7 +3070,6 @@ blockquote {
         line-height: 2.8em;
     }
     .comment-icons ul li a.like {
-        background: url(../images/iconsprite.png) no-repeat 2px -48px;
     }
     .admin-text-left {
         float: left;
